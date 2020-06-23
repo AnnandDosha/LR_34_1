@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.columnsDataGridView = new System.Windows.Forms.DataGridView();
             this.Код = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Название = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Цена = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.В_корзину = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // columnsDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.columnsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Код,
             this.Название,
             this.Цена,
             this.В_корзину});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(901, 514);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.columnsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.columnsDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.columnsDataGridView.Name = "columnsDataGridView";
+            this.columnsDataGridView.Size = new System.Drawing.Size(343, 276);
+            this.columnsDataGridView.TabIndex = 0;
+            this.columnsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Код
             // 
@@ -76,19 +76,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 514);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(343, 276);
+            this.Controls.Add(this.columnsDataGridView);
             this.Name = "Columns";
             this.Text = "Columns";
             this.Load += new System.EventHandler(this.Columns_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnsDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView columnsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Код;
         private System.Windows.Forms.DataGridViewTextBoxColumn Название;
         private System.Windows.Forms.DataGridViewTextBoxColumn Цена;

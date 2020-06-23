@@ -19,6 +19,9 @@ namespace LR_34
 
         private void sqrtDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            MessageBox.Show(sqrtDataGridView.Rows[e.RowIndex].HeaderCell.Value+ sqrtDataGridView.Columns[e.ColumnIndex].HeaderText + "X" + 
+            sqrtDataGridView.Rows[e.RowIndex].HeaderCell.Value + sqrtDataGridView.Columns[e.ColumnIndex].HeaderText + "=" + sqrtDataGridView[e.ColumnIndex,e.RowIndex].Value);
+
         }
 
         private void Tablsqrt_Load(object sender, EventArgs e)
